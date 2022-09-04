@@ -10,8 +10,9 @@ table, th, td {
   padding: 10px;
 }
 
-table>td {
-  justify-content: center;
-  align-content: center;
+a img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
