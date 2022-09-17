@@ -2,12 +2,13 @@
   margin: 1rem
 }
 
-table {
+table, tr, td, th {
   border-collapse: collapse;
 }
 
 table, th, td {
   padding: 10px;
+  border: 1px solid black;
 }
 
 a img {
