@@ -5,6 +5,19 @@ body {
   color: white;
 }
 
+a.home-link {
+  text-decoration: none;
+  color: white;
+  margin: 10px;
+  padding: .5rem;
+  background: #454545;
+  border-radius: 5px;
+}
+
+a.home-link:hover {
+  background: #696969;
+}
+
 .dc {
   margin: 10px; /* Superseeded by inline styles */
   padding: 0.5rem;
