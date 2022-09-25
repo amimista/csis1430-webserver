@@ -1,0 +1,26 @@
+.empty-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.empty {
+  display: block;
+  text-align: center;
+}
+
+.empty h1 {
+  padding: 1rem;
+}
+
+.empty p {
+  padding-bottom: 3rem;
+}
+
+.empty img {
+  border: 3px solid greenyellow;
+}
+
+.empty a {
+  color: aliceblue;
+}
