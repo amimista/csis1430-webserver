@@ -1,0 +1,42 @@
+body {
+  background-color: rgb(22, 22, 22);
+}
+
+.container {
+  /* background-image: url(../img/banana.png); */
+  width: 400px;
+  height: 400px;
+  position: relative;
+}
+
+.yellow,
+.gold,
+.beige,
+.border,
+.stem {
+  position: absolute;
+  box-sizing: border-box;
+  height: 19px;
+  width: 19px;
+  /* border: 0.5px solid white; */
+}
+
+.yellow {
+  background-color: #F1E133;
+}
+
+.gold {
+  background-color: #F2BE22;
+}
+
+.beige {
+ background-color: #d1ac15;
+}
+
+.border {
+  background-color: #0D0605;
+}
+
+.stem {
+  background-color: #362904;
+}
