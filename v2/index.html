@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Marcus Walker's Page</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat"
+    />
+  </head>
+  <body>
+    <div class="nav">
+      <!-- I wish I could make this nav tree into something that I could just reference like an HTML tag -->
+      <div class="nav-left">
+        <h1>Marcus Walker</h1>
+      </div>
+      <div class="nav-right">
+        <ul class="nav-list">
+          <li class="dropbtn">
+            <a href="../pages">CSIS Assignments</a>
+            <div class="dropdown-content">
+              <a href="../pages/tables/">Tables</a>
+              <a href="../pages/image-map/">Image Mapping</a>
+              <a href="../pages/pizza-1/">Pizza Submit Form</a>
+              <a href="../pages/superheroes/">Superhero Styling</a>
+              <a href="../pages/horizontal-menu/">Horizonal Menu</a>
+              <a href="../pages/little-box">Little Boxes</a>
+            </div>
+          </li>
+          <li><a href="pages/about/">About</a></li>
+          <li><a href="../">Original Page</a></li>
+        </ul>
+        
+      </div>
+    </div>
+    <main>
+      <h2>What am I looking at?</h2>
+      <p>
+        Well, to put it in simple terms, you're not supposed to be here. Sure
+        you can paruse around, but there really isn't anything exiting to see
+        here. This is mostly just a collection of assingmnets that I've done for
+        my HTML, CSS, and JS class.
+        <br />
+        <br />
+        This will most likely turn into a self-hosted portfolio for myself in
+        the future, but I only think that'll be done before Christmas of 2022.
+      </p>
+    </main>
+    <!-- Countdown Taken from W3Schools -->
+    <div class="countdown-container">
+      <p id="countdown"></p>
+      <script>
+        // Set the date we're counting down to
+        var countDownDate = new Date("Dec 5, 2022 23:59:59").getTime();
+  
+        // Update the count down every 1 second
+        var x = setInterval(function () {
+          // Get today's date and time
+          var now = new Date().getTime();
+  
+          // Find the distance between now and the count down date
+          var distance = countDownDate - now;
+  
+          // Time calculations for days, hours, minutes and seconds
+          var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+          var hours = Math.floor(
+            (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+          );
+          var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+          var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+  
+          // Display the result in the element with id="demo"
+          document.getElementById("countdown").innerHTML =
+            days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+  
+          // If the count down is finished, write some text
+          if (distance < 0) {
+            clearInterval(x);
+            document.getElementById("countdown").innerHTML = "EXPIRED";
+          }
+        }, 1000);
+      </script>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  /* overflow: hidden; */
+  font-family: "Montserrat"
+}
+
+:root {
+  --dark-color: #63595C;
+  --dar-secondary: #404E4D;
+  --hue-color: #62BEC1;
+  --hue-secondary: #5AD2F4;
+  --white: #d0e1d4;
+  --white-secondary: #f2f6d0;
+}
+
+body {
+  background-image: url(img/stripes-light.webp);
+  background-blend-mode: multiply;
+  background-color: var(--dark-color);
+  color: var(--white-secondary);
+  overflow: hidden;
+}
+
+.nav {
+  overflow: visible;
+  margin: 1rem;
+  padding: .5rem;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  border-radius: 10px;
+  color: var(--dark-color);
+  background-image: url(img/y-so-serious-white.png);
+  background-blend-mode: multiply;
+  background-color: var(--white);
+}
+
+.nav-left, .nav-right {
+  margin: 0.5rem;
+}
+
+.nav-left {
+  order: 1;
+  flex-grow: 1;
+}
+
+.nav-right {
+  order: 2;
+  flex-grow: 1;
+  position: relative;
+}
+
+/* List and Highligting */
+.nav-list {
+  list-style-type: none;
+  float: right;
+}
+
+.nav-list li {
+  padding: 0.5rem 0rem;
+  display: inline-block;
+  border-radius: 10px;
+
+}
+
+.nav-list li>a {
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  color: var(--dark-color);
+  transition: color 400ms, background-color 500ms;
+}
+
+.nav-list>li:hover{
+  background-color: var(--dark-color);
+}
+
+.nav-list>li:hover>a {
+  color: var(--white);
+}
+
+/* W3Schools Dropdown */
+.dropbtn {
+  position: relative;
+  overflow: inherit;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  transform: translateY(.5rem);
+  background-color: var(--hue-color);
+  border-radius: 10px;
+  min-width: 160px;
+  z-index: 1;
+  transition: all 500ms; /* Not working :< */
+}
+
+.dropdown-content a {
+  background-color: var(--white);
+  color: var(--dark-color);
+  border: 1px solid var(--hue-secondary);
+  border-radius: 10px;
+  padding: .5rem 1rem;
+  margin: .2rem;
+  text-decoration: none;
+  display: block;
+}
+
+.dropbtn:hover .dropdown-content {
+  display: block;
+}
+
+main {
+  margin: 1rem;
+  padding: 0.5rem;
+  border-radius: 10px;
+  border: 1px solid var(--hue-color);
+}
+
+main h2 {
+  margin: 0.3rem 0;
+}
+
+main p {
+  margin: 0.2rem 0;
+  line-height: normal;
+  box-sizing: border-box;
+}
+
+.countdown-container {
+  margin: 1rem;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  border: 1px dashed var(--hue-color);
+}
+
+#countdown {
+  font-size: 64px;
+  font-family: 'Courier New', Courier, monospace;
+}
