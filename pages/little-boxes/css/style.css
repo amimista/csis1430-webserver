@@ -4,9 +4,24 @@ body {
 
 .container {
   /* background-image: url(../img/banana.png); */
+  display: block;
   width: 400px;
   height: 400px;
   position: relative;
+}
+
+.bamboozle {
+  display: none;
+}
+
+.container:hover {
+  display: none;
+}
+
+.container:hover + img.bamboozle {
+  width: 400px;
+  height: 400px;
+  display: block;
 }
 
 .yellow,
