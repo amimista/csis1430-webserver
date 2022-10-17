@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <title>Contact</title>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="./">Home</a></li>
+        <li><a class="active" href="contact.html">Contact</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="order.html">Order</a></li>
+      </ul>
+    </nav>
+    <form action="https://www.stonecoldprofessor.com/pizza-contact.php" method="post" target="_blank">
+      <label for="first-name">First Name:</label>
+      <input type="text" placeholder="First Name" name="first-name" id="first-name"><br>
+      <label for="last-name">Last Name:</label>
+      <input type="text" placeholder="Last Name" name="last-name" id="last-name"><br>
+      <label for="email">Email:</label>
+      <input type="email" placeholder="Email Address" name="email" id="email"><br>
+      <label for="message">Additional Message:</label>
+      <textarea placeholder="Message" name="message" id="message"></textarea><br>
+      <input type="submit" value="Send">
+      <input type="reset" value="Clear">
+    </form>
+  </body>
+</html>

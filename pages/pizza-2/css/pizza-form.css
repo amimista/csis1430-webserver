@@ -1,0 +1,241 @@
+:root {
+  --color1: #211103 ;
+  --color2: #3D1308 ;
+  --color3: #7B0D1E ;
+  --color4: #9F2042 ;
+  --color5: #F8E5EE ;
+
+}
+
+body {
+  background: radial-gradient(var(--color3), var(--color1));
+}
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+}
+
+.info-container {
+  padding: 1rem;
+  margin: 1rem;
+  background-color: var(--color3);
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 0.7rem;
+  width: 50vw;
+}
+
+.info-container > [type] {
+  display: inline-grid;
+  background-color: transparent;
+  color: var(--color5);
+  border-radius: 10px;
+  border: 1px solid var(--color5);
+  padding: 1rem 0.5rem;
+  width: 15rem;
+}
+
+.info-container > textarea {
+  display: inline-grid;
+  background-color: var(--color2);
+  color: var(--color5);
+  border-radius: 10px;
+  grid-column-end: span;
+  border: 1px solid var(--color5);
+  padding: 0.3rem;
+  width: 15rem;
+  height: 10rem;
+}
+
+
+.pizza-form {
+  display: flex;
+  flex-grow: 0;
+  gap: 1rem;
+  justify-content: center;
+  width: 75vw;
+  padding: 1rem;
+}
+
+.size-container label {
+  display: inline-block;
+  padding: 1rem;
+}
+
+.crust-container label {
+  display: inline-block;
+  padding: 1rem 0 1rem 1rem;
+}
+
+.button-container {
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+  align-items: center;
+}
+
+.button-container input {
+  font-weight: 700;
+  font-size: 32px;
+  width: 50vw;
+  border: 0;
+  background-color: var(--color4);
+  color: var(--color5);
+  padding: 1rem;
+  transition: background-color 200ms;
+}
+
+.button-container input:hover {
+  background-color: var(--color3);
+}
+
+.toppings-container {
+  display: block;
+  position: relative;
+}
+
+.toppings-container label{
+  display: inline-block;
+  padding: 1.5rem 3rem;
+  color: var(--color5);
+  text-shadow: 0px 0px 16px var(--color1);
+  width: 20rem;
+  text-align: center;
+  background-size: cover;
+  background-position: 0 -1rem;
+}
+
+/* PEPPERONI */
+
+.toppings-container [for="topping1"] {
+  background-image: 
+    linear-gradient(rgba(0,0,0,0.72), rgba(0,0,0,0.72)),
+    url(https://assets.bonappetit.com/photos/615ef45230a120edc42ad1e8/1:1/w_1202,h_1202,c_limit/Pepperoni.jpg);
+  background-blend-mode: multiply;
+}
+
+.toppings-container #topping1:checked + [for="topping1"]{
+  background-image: 
+    linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+    url(https://assets.bonappetit.com/photos/615ef45230a120edc42ad1e8/1:1/w_1202,h_1202,c_limit/Pepperoni.jpg);
+  background-blend-mode: multiply;
+}
+
+/* BELL PEPPERS */
+
+.toppings-container [for="topping2"] {
+  background-image: 
+    linear-gradient(rgba(0,0,0,0.72), rgba(0,0,0,0.72)),
+    url(https://hips.hearstapps.com/hmg-prod/images/sweet-pepper-colorful-sweet-bell-peppers-natural-royalty-free-image-1611355757.);
+  background-blend-mode: multiply;
+}
+
+.toppings-container #topping2:checked + [for="topping2"]{
+  background-image: 
+    linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+    url(https://hips.hearstapps.com/hmg-prod/images/sweet-pepper-colorful-sweet-bell-peppers-natural-royalty-free-image-1611355757.);
+  background-blend-mode: multiply;
+}
+
+/* HARD BOILED EGGS */
+
+.toppings-container [for="topping3"] {
+  background-image: 
+    linear-gradient(rgba(0,0,0,0.72), rgba(0,0,0,0.72)),
+    url(https://hips.hearstapps.com/delish/assets/18/08/1519321899-hard-boiled-eggs-horizontal.jpg);
+  background-blend-mode: multiply;
+}
+
+.toppings-container #topping3:checked + [for="topping3"]{
+  background-image: 
+    linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+    url(https://hips.hearstapps.com/delish/assets/18/08/1519321899-hard-boiled-eggs-horizontal.jpg);
+  background-blend-mode: multiply;
+}
+
+
+/* OLIVES */
+
+.toppings-container [for="topping4"] {
+  background-image: 
+    linear-gradient(rgba(0,0,0,0.72), rgba(0,0,0,0.72)),
+    url(https://www.grocery.coop/sites/default/files/wp-content/uploads/2011/06/Olives1_0.jpg);
+  background-blend-mode: multiply;
+}
+
+.toppings-container #topping4:checked + [for="topping4"]{
+  background-image: 
+    linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+    url(https://www.grocery.coop/sites/default/files/wp-content/uploads/2011/06/Olives1_0.jpg);
+  background-blend-mode: multiply;
+}
+
+/* MUSHROOMS */
+
+.toppings-container [for="topping5"] {
+  background-image: 
+    linear-gradient(rgba(0,0,0,0.72), rgba(0,0,0,0.72)),
+    url(https://www.grocery.coop/sites/default/files/styles/article_node/public/Portobello_Mushrooms.jpg?itok=7146kK-q);
+  background-blend-mode: multiply;
+}
+
+.toppings-container #topping5:checked + [for="topping5"]{
+  background-image: 
+    linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+    url(https://www.grocery.coop/sites/default/files/styles/article_node/public/Portobello_Mushrooms.jpg?itok=7146kK-q);
+  background-blend-mode: multiply;
+}
+
+/* GOAT CHEESE */
+
+.toppings-container [for="topping6"] {
+  background-image: 
+    linear-gradient(rgba(0,0,0,0.72), rgba(0,0,0,0.72)),
+    url(https://www.zingermanscreamery.com/app/uploads/2018/04/zing-creamery-375.jpg);
+  background-blend-mode: multiply;
+}
+
+.toppings-container #topping6:checked + [for="topping6"]{
+  background-image: 
+    linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+    url(https://www.zingermanscreamery.com/app/uploads/2018/04/zing-creamery-375.jpg);
+  background-blend-mode: multiply;
+}
+
+/* CHICKEN */
+
+.toppings-container [for="topping7"] {
+  background-image: 
+    linear-gradient(rgba(0,0,0,0.72), rgba(0,0,0,0.72)),
+    url(https://healthyfitnessmeals.com/wp-content/uploads/2022/04/Italian-Chicken-Recipe-15.jpg);
+  background-blend-mode: multiply;
+}
+
+.toppings-container #topping7:checked + [for="topping7"]{
+  background-image: 
+    linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+    url(https://healthyfitnessmeals.com/wp-content/uploads/2022/04/Italian-Chicken-Recipe-15.jpg);
+  background-blend-mode: multiply;
+}
+
+/* ARTICHOKE */
+
+.toppings-container [for="topping8"] {
+  background-image: 
+    linear-gradient(rgba(0,0,0,0.72), rgba(0,0,0,0.72)),
+    url(https://housewifehowtos.com/wp-content/uploads/2020/08/Marinated-Artichoke-Hearts-are-delicious-on-their-own-1.jpg);
+  background-blend-mode: multiply;
+}
+
+.toppings-container #topping8:checked + [for="topping8"]{
+  background-image: 
+    linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+    url(https://housewifehowtos.com/wp-content/uploads/2020/08/Marinated-Artichoke-Hearts-are-delicious-on-their-own-1.jpg);
+  background-blend-mode: multiply;
+}
+
+.toppings-container [type] {
+  display: none;
+}

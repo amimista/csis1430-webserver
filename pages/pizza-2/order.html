@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/pizza-form.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto"
+    />
+    <title>Order</title>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="./">Home</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a class="active" href="order.html">Order</a></li>
+      </ul>
+    </nav>
+    <main>
+      <form
+        action="https://www.stonecoldprofessor.com/pizza-contact.php"
+        method="post"
+        target="_blank"
+      >
+        <div class="flex-container">
+          <div class="info-container">
+            <input
+              type="text"
+              name="first"
+              id="text-input"
+              placeholder="First Name"
+            />
+            <input
+              type="text"
+              name="last"
+              id="text-input"
+              placeholder="Last Name"
+            />
+            <input
+              type="text"
+              name="add1"
+              id="text-input"
+              placeholder="Address Line 1"
+              required
+            />
+
+            <input
+              type="text"
+              name="add2"
+              id="text-input"
+              placeholder="Address Line 2"
+            />
+            <input
+              type="text"
+              name="city"
+              id="text-input"
+              placeholder="City"
+              required
+            />
+            <input
+              type="text"
+              name="state"
+              id="text-input"
+              placeholder="State"
+              required
+            />
+            <input
+              type="text"
+              name="zip"
+              id="text-input"
+              placeholder="ZIP"
+              required
+            />
+            <input
+              type="tel"
+              name="phone"
+              id="text-input"
+              placeholder="Phone Number"
+              required
+            />
+            <input
+              type="email"
+              name="email"
+              id="text-input"
+              placeholder="Email"
+              required
+            />
+            <textarea
+              name="comments"
+              id="text-input"
+              cols="30"
+              rows="10"
+              placeholder="Message"
+            ></textarea>
+          </div>
+        </div>
+        <div class="flex-container">
+          <div class="pizza-form">
+            <!-- Size -->
+            <div class="size-container">
+              <h2>Select your Size</h2>
+              <input type="radio" name="size" id="small" />
+              <label for="small">Small</label><br />
+              <input type="radio" name="size" id="med" />
+              <label for="med">Medium</label><br />
+              <input type="radio" name="size" id="large" />
+              <label for="large">Large</label><br />
+              <input type="radio" name="size" id="ex-large" />
+              <label for="ex-large">Family-Feeder</label><br />
+            </div>
+
+            <div class="crust-container">
+              <h2>Crust Type</h2>
+              <label for="crust">Choose a Crust:</label>
+              <select name="crust" id="crust-dropdown">
+                <option value="deep-dish">Deep Dish</option>
+                <option value="thin">Thin</option>
+                <option value="regular">Regular</option>
+                <option value="stuffed">Stuffed</option>
+              </select>
+            </div>
+
+            <div class="toppings-container">
+              <!-- Toppings -->
+              <h2>Toppings</h2>
+              <input
+                type="checkbox"
+                id="topping1"
+                name="[pepperoni]"
+                value="Pepperoni"
+              />
+              <label for="topping1"> Pepperoni</label><br />
+              <input
+                type="checkbox"
+                id="topping2"
+                name="[bell-peppers]"
+                value="bell-peppers"
+              />
+              <label for="topping2"> Bell Peppers</label><br />
+              <input
+                type="checkbox"
+                id="topping3"
+                name="[hb-eggs]"
+                value="hb-eggs"
+              />
+              <label for="topping3"> Hard Boiled Eggs</label><br />
+              <input
+                type="checkbox"
+                id="topping4"
+                name="[olives]"
+                value="olives"
+              />
+              <label for="topping4"> Olives</label><br />
+              <input
+                type="checkbox"
+                id="topping5"
+                name="[mushrooms]"
+                value="mushrooms"
+              />
+              <label for="topping5"> Mushrooms</label><br />
+              <input
+                type="checkbox"
+                id="topping6"
+                name="[goat-cheese]"
+                value="goat-cheese"
+              />
+              <label for="topping6"> Goat Cheese</label><br />
+              <input
+                type="checkbox"
+                id="topping7"
+                name="[chicken]"
+                value="chicken"
+              />
+              <label for="topping7"> Chicken</label><br />
+              <input
+                type="checkbox"
+                id="topping8"
+                name="[artichoke]"
+                value="artichoke"
+              />
+              <label for="topping8"> Artichoke</label><br />
+            </div>
+          </div>
+        </div>
+        <div class="button-container">
+          <!-- Submit and Reset -->
+          <input type="submit" value="Submit" />
+          <input type="reset" value="Reset" />
+        </div>
+      </form>
+    </main>
+  </body>
+</html>
