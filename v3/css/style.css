@@ -24,8 +24,6 @@ body {
   display: grid;
   grid-template-columns: auto auto;
   gap: 1px;
-  background-color: var(--color-6);
-  padding: 1px;
 }
 
 .cat-box {
@@ -36,17 +34,25 @@ body {
   flex-grow: 1;
 }
 
+.cat-box>a {
+  width: 100%;
+  text-decoration: none;
+  color: var(--color-6);
+  font-family: "Poppins";
+}
+
 .cat-box-content {
   text-align: center;
   font-size: 32pt;
   font-variant: small-caps;
-  width: 100%;
+  /* width: 100%; */
   /* height: 100%; */
   padding: 1rem;
   backdrop-filter: blur(5px);
   user-select: none;
   min-height: max-content;
   transition: backdrop-filter 200ms;
+  position: relative;
 }
 
 .cat-box:hover .cat-box-content {

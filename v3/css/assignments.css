@@ -45,6 +45,8 @@
   background-image: var(--background-gradient), url(../img/pages/midterm.png);
   background-size: cover;
   background-position-y: center;
+  grid-column-end: 3;
+  grid-column-start: 1;
 }
 
 #coming-soon {
