@@ -4,30 +4,44 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="refresh" content="0; url='./v3/'" />
-    <link rel="stylesheet" href="style.css">
-    <title>Marcus Walker's Website</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/navbar.css" />
+    <!-- <link rel="stylesheet" href="css/sidebar.css" /> -->
+
+    <title>Marcus Walker's Page</title>
   </head>
   <body>
-    <div class="nav">
-      <div class="nav-left"><h1>Marcus Walker</h1></div>
-      <div class="nav-right">
-        <ul>
-          <li class="dropbtn">
-            <a href="pages/">CSIS1340</a>
-            <div class="dropdown-content">
-              <a href="pages/tables/">Tables</a>
-              <a href="pages/image-map/">Image Mapping</a>
-              <a href="pages/pizza-1/">Pizza Submit Form</a>
-              <a href="pages/superheroes/">Superhero Styling</a>
-              <a href="pages/horizontal-menu/">Horizonal Menu</a>
-            </div>
-          </li>
-          <li><a href="#">About</a></li>
-          <li><a href="v2/">Test</a></li>
-        </ul>
-      </div>
-    </div>
+    <nav class="navbar">
+      <div class="navbar-overlay" onclick="toggleMenuOpen()"></div>
+
+      <button type="button" class="navbar-burger" onclick="toggleMenuOpen()">
+        <span class="material-icons">menu</span>
+      </button>
+      <h1 class="navbar-title">Home</h1>
+      <nav class="navbar-menu">
+        <button type="button" class="active"><a href="#">Home</a></button>
+        <button type="button">
+          <a href="api/assignments/">Assignments</a>
+        </button>
+      </nav>
+    </nav>
+
+    <script type="text/javascript">
+      const toggleMenuOpen = () => document.body.classList.toggle("open");
+    </script>
+
     <main>
       <h2>Marcus Walker's Website</h2>
       <p>

@@ -11,48 +11,70 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
 
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/assignments.css" />
+    <link rel="stylesheet" href="../../css/style.css" />
+    <link rel="stylesheet" href="../../css/assignments.css" />
+    <link rel="stylesheet" href="../../css/navbar.css" />
     <!-- <link rel="stylesheet" href="css/sidebar.css" /> -->
 
     <title>Marcus Walker's Page</title>
   </head>
   <body>
+    <nav class="navbar">
+      <div class="navbar-overlay" onclick="toggleMenuOpen()"></div>
+
+      <button type="button" class="navbar-burger" onclick="toggleMenuOpen()">
+        <span class="material-icons">menu</span>
+      </button>
+      <h1 class="navbar-title">Assignments</h1>
+      <nav class="navbar-menu">
+        <button type="button"><a href="../../">Home</a></button>
+        <button type="button" class="active"><a href="#">Assignments</a></button>
+      </nav>
+    </nav>
+
+    <script type="text/javascript">
+      const toggleMenuOpen = () => document.body.classList.toggle("open");
+    </script>
+
     <main>
       <div class="assignment-container">
         <div class="cat-box" id="tables">
-          <a href="../pages/tables/">
+          <a href="../../pages/tables/">
             <div class="cat-box-content">Tables</div>
           </a>
         </div>
         <div class="cat-box" id="mapping">
-          <a href="../pages/image-map/">
+          <a href="../../pages/image-map/">
             <div class="cat-box-content">Image Mapping</div>
           </a>
         </div>
         <div class="cat-box" id="pizza-1">
-          <a href="../pages/pizza-1/">
+          <a href="../../pages/pizza-1/">
             <div class="cat-box-content">Pizza Submit Form</div>
           </a>
         </div>
         <div class="cat-box" id="superhero">
-          <a href="../pages/superheroes/">
+          <a href="../../pages/superheroes/">
             <div class="cat-box-content">Superhero Styling</div>
           </a>
         </div>
         <div class="cat-box" id="horizontal-menu">
-          <a href="../pages/horizontal-menu/">
+          <a href="../../pages/horizontal-menu/">
             <div class="cat-box-content">Horizontal Menu</div>
           </a>
         </div>
         <div class="cat-box" id="little-boxes">
-          <a href="../pages/little-boxes/">
+          <a href="../../pages/little-boxes/">
             <div class="cat-box-content">Little Boxes</div>
           </a>
         </div>
         <div class="cat-box" id="midterm">
-          <a href="../pages/pizza-2/">
+          <a href="../../pages/pizza-2/">
             <div class="cat-box-content">Midterm</div>
           </a>
         </div>
