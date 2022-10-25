@@ -1,0 +1,52 @@
+:root {
+  --background-gradient: linear-gradient(
+    rgba(0, 0, 0, 0.8),
+    rgba(0, 0, 0, 0.8)
+  );
+}
+
+#tables {
+  background-image: var(--background-gradient), url(../img/pages/tables.png);
+  background-size: cover;
+  background-position-y: center;
+}
+
+#mapping {
+  background-image: var(--background-gradient), url(../img/pages/mapping.png);
+  background-size: cover;
+  background-position-y: center;
+}
+
+#pizza-1 {
+  background-image: var(--background-gradient), url(../img/pages/pizza-1.png);
+  background-size: cover;
+  background-position-y: center;
+}
+
+#superhero {
+  background-image: var(--background-gradient), url(../img/pages/superhero.png);
+  background-size: cover;
+  background-position-y: center;
+}
+
+#horizontal-menu {
+  background-image: var(--background-gradient), url(../img/pages/menu.png);
+  background-size: cover;
+  background-position-y: center;
+}
+
+#little-boxes {
+  background-image: var(--background-gradient), url(../img/pages/little-boxes.png);
+  background-size: cover;
+  background-position-y: center;
+}
+
+#midterm {
+  background-image: var(--background-gradient), url(../img/pages/midterm.png);
+  background-size: cover;
+  background-position-y: center;
+}
+
+#coming-soon {
+  opacity: 0;
+}

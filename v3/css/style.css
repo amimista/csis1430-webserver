@@ -1,0 +1,54 @@
+:root {
+  --color-1: #0b2027;
+  --color-2: #264d5a;
+  --color-3: #40798c;
+  --color-4: #70a9a1;
+  --color-5: #cfd7c7;
+  --color-6: #f6f1d1;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: var(--color-1);
+  color: var(--color-5);
+  background-image: url(../img/double-bubble-dark.webp);
+  background-blend-mode: lighten;
+}
+
+
+.assignment-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 1px;
+  background-color: var(--color-6);
+  padding: 1px;
+}
+
+.cat-box {
+  background-color: var(--color-4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.cat-box-content {
+  text-align: center;
+  font-size: 32pt;
+  font-variant: small-caps;
+  width: 100%;
+  /* height: 100%; */
+  padding: 1rem;
+  backdrop-filter: blur(5px);
+  user-select: none;
+  min-height: max-content;
+  transition: backdrop-filter 200ms;
+}
+
+.cat-box:hover .cat-box-content {
+  backdrop-filter: blur(1px);
+}
