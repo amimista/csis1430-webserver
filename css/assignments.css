@@ -36,7 +36,7 @@
   backdrop-filter: blur(5px);
   user-select: none;
   min-height: max-content;
-  transition: backdrop-filter 200ms;
+  transition: backdrop-filter 200ms, font-size 200ms, font-weight 200ms;
   position: relative;
 }
 
@@ -86,6 +86,12 @@
   background-position-y: center;
   grid-column-end: 3;
   grid-column-start: 1;
+}
+
+#photoshop {
+  background-image: var(--background-gradient), url(../img/pages/photoshop.png);
+  background-size: cover;
+  background-position-y: 20%;
 }
 
 #coming-soon {

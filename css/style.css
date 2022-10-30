@@ -17,10 +17,11 @@ body {
   color: var(--color-5);
   background-image: url(../img/double-bubble-dark.webp);
   background-blend-mode: lighten;
+  position: relative;
 }
 
 main {
-  position: fixed;
+  position: absolute;
   top: 64px;
   left: 0;
   width: 100%;
