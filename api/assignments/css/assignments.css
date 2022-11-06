@@ -94,6 +94,20 @@
   background-position-y: 20%;
 }
 
+/* https://images.unsplash.com/photo-1646532410674-0ca04df8d724?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80 */
+
+#photoshop {
+  background-image: var(--background-gradient), url(../img/pages/photoshop.png);
+  background-size: cover;
+  background-position-y: 20%;
+}
+
+#happy-birthday {
+  background-image: var(--background-gradient), url(https://images.unsplash.com/photo-1646532410674-0ca04df8d724?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&w=1000&q=80);
+  background-size: cover;
+  background-position-y: 20%;
+}
+
 #coming-soon {
   opacity: 0;
 }
