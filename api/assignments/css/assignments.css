@@ -108,6 +108,12 @@
   background-position-y: 20%;
 }
 
+#lottery {
+  background-image: var(--background-gradient), url(../img/pages/lottery.png);
+  background-size: cover;
+  background-position-y: 55%;
+}
+
 #coming-soon {
   opacity: 0;
 }
