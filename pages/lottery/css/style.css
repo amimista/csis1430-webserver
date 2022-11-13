@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins");
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@500&display=swap');
 * {
   margin: 0;
   box-sizing: border-box;
@@ -20,14 +21,17 @@ a {
 .container {
   height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
 #result {
+  font-family: 'Noto Sans Mono', monospace;
   font-size: 48pt;
   padding: 0.5rem 3rem;
   text-align: center;
+  outline: none;
   border-radius: 6rem;
   opacity: 0;
   transform: translateY(-30%);
@@ -36,4 +40,49 @@ a {
 
 #result:hover {
   border: 1px solid rgba(255, 255, 255, 0.14);
+}
+
+input[type="text"] {
+  background-color: transparent;
+  color: aliceblue;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 10px;
+  padding: 0.7rem 0.5rem;
+  outline: none;
+  transition: color 200ms, background-color 200ms;
+}
+
+input[type="text"]:hover, input[type="text"]:focus {
+  color: rgb(30, 30, 30);
+  background-color: aliceblue;
+}
+
+button {
+  background-color: transparent;
+  padding: 0.7rem 1rem;
+  color: aliceblue;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 10px;
+  margin: 10px;
+  outline: none;
+  cursor: pointer;
+  transition: color 200ms, background-color 200ms;
+}
+
+button:hover {
+  color: rgb(30, 30, 30);
+  background-color: aliceblue;
+}
+
+.range-container {
+  display: flex;
+  align-items: center;
+}
+
+.range-container input[type="text"] {
+  width: 100px;
+}
+
+#inputLength {
+  margin: 10px;
 }
