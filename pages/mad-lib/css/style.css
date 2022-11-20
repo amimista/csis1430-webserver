@@ -55,6 +55,7 @@ main {
 .main-container {
   display: flex;
   flex-direction: column;
+  margin-top: 1rem;
 }
 
 .main-container p {

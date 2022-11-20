@@ -4,7 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
     <link rel="stylesheet" href="css/style.css" />
     <script src="js/index.js" defer></script>
     <title>Mad-Libs</title>
@@ -19,34 +22,113 @@
         <div class="story-sel-container">
           <div class="story-1-button" onclick="changeStory()">Story 1</div>
           <div class="story-2-button" onclick="changeStory()">Story 2</div>
-          <p><span class="material-symbols-outlined">
-            arrow_back
-            </span> change stories here</p>
+          <p>
+            <span class="material-symbols-outlined"> arrow_back </span> change
+            stories here
+          </p>
         </div>
         <div id="story-1" hidden>
           <p>
-            Every once in a while, a revolutionary <span><input type="text" placeholder="Noun" id="noun-1"></span> comes along that
-            changes everything and Apple has been - well, first of all, one's very
-            <span><input type="text" placeholder="Adjective" id="adjective-1" onchange="changeLink('adjective-1')"></span> if you get to work on just one of these in your career.
-            Apple has been very <span><input type="text" placeholder="Adjective" id="adjective-1-link" disabled></span>. It's been able to introduce a few of
-            these into the <span><input type="text" placeholder="Noun" id="noun-2"></span>.
+            Every once in a while, a revolutionary
+            <span><input type="text" placeholder="Noun" id="noun-1" /></span>
+            comes along that changes everything and Apple has been - well, first
+            of all, one's very
+            <span
+              ><input
+                type="text"
+                placeholder="Adjective"
+                id="adjective-1"
+                onchange="changeLink('adjective-1')"
+            /></span>
+            if you get to work on just one of these in your career. Apple has
+            been very
+            <span
+              ><input
+                type="text"
+                placeholder="Adjective"
+                id="adjective-1-link"
+                disabled /></span
+            >. It's been able to introduce a few of these into the
+            <span><input type="text" placeholder="Noun" id="noun-2" /></span>.
           </p>
           <p>
-            So, before we get into it, let me talk about a category of things. The
-            most advanced <span><input type="text" placeholder="Noun" id="noun-3" onchange="changeLink('noun-3')"></span> are called smart <span><input type="text" placeholder="Noun" id="noun-3-link" disabled></span>, so they say. And they typically combine a <span><input type="text" placeholder="Noun" id="noun-3-link2" disabled></span> plus some e-mail capability, plus they <span><input type="text" placeholder="Verb" id="verb-1"></span>
-            it's the Internet. It's sort of the baby Internet into one device, and
-            they all have these <span><input type="text" placeholder="Adjective" id="adjective-2"></span> plastic keyboards on them. And the problem
-            is that they're not so smart and they're not so easy to <span><input type="text" placeholder="Verb" id="verb-2"></span>, and so if
-            you kind of make a Business School 101 graph of the smart axis and the
-            easy-to-use axis, phones, regular cell phones are right there, they're
-            not so smart, and they're not so easy to use.
+            So, before we get into it, let me talk about a category of things.
+            The most advanced
+            <span
+              ><input
+                type="text"
+                placeholder="Noun"
+                id="noun-3"
+                onchange="changeLink('noun-3')"
+            /></span>
+            are called smart
+            <span
+              ><input
+                type="text"
+                placeholder="Noun"
+                id="noun-3-link"
+                disabled /></span
+            >, so they say. And they typically combine a
+            <span
+              ><input type="text" placeholder="Noun" id="noun-3-link2" disabled
+            /></span>
+            plus some e-mail capability, plus they
+            <span><input type="text" placeholder="Verb" id="verb-1" /></span>
+            it's the Internet. It's sort of the baby Internet into one device,
+            and they all have these
+            <span
+              ><input type="text" placeholder="Adjective" id="adjective-2"
+            /></span>
+            plastic keyboards on them. And the problem is that they're not so
+            smart and they're not so easy to
+            <span><input type="text" placeholder="Verb" id="verb-2" /></span>,
+            and so if you kind of make a Business School 101 graph of the smart
+            axis and the easy-to-use axis, phones, regular cell phones are right
+            there, they're not so smart, and they're not so easy to use.
           </p>
         </div>
         <div id="story-2">
           <p>
-            Today I went to the zoo. I saw a(n) <span><input type="text" placeholder="Adjective" id="adjective-1"></span> <span><input type="text" placeholder="Noun" id="noun-1"></span> jumping up and down in it's tree. He
-            <span><input type="text" placeholder="Verb(past)" id="verb-1"></span> <span><input type="text" placeholder="Adverb" id="adverb-1"></span> through the large tunnel that led to its <span><input type="text" placeholder="Adjective" id="adjective-2"></span> <span><input type="text" placeholder="Noun" id="noun-2"></span>. I got some peanuts and passed
-            them through the cage to a gigantic gray <span><input type="text" placeholder="Noun" id="noun-3"></span> towering above my head. Feeding that animal made me hungry. I went to get a <span><input type="text" placeholder="Adjective" id="adjective-3"></span> scoop of ice cream. It filled my stomach. Afterwards I had to <span><input type="text" placeholder="Verb(past)" id="verb-2"></span> <span><input type="text" placeholder="Adverb" id="adverb-2"></span> to catch our bus. When I got home I <span><input type="text" placeholder="Verb(past)" id="verb-1"></span> my Mom for a <span><input type="text" placeholder="Adjective" id="adjective-4"></span> day at the zoo.
+            Today I went to the zoo. I saw a(n)
+            <span
+              ><input type="text" placeholder="Adjective" id="adjective-1"
+            /></span>
+            <span><input type="text" placeholder="Noun" id="noun-1" /></span>
+            jumping up and down in it's tree. He
+            <span
+              ><input type="text" placeholder="Verb(past)" id="verb-1"
+            /></span>
+            <span
+              ><input type="text" placeholder="Adverb" id="adverb-1"
+            /></span>
+            through the large tunnel that led to its
+            <span
+              ><input type="text" placeholder="Adjective" id="adjective-2"
+            /></span>
+            <span><input type="text" placeholder="Noun" id="noun-2" /></span>. I
+            got some peanuts and passed them through the cage to a gigantic gray
+            <span><input type="text" placeholder="Noun" id="noun-3" /></span>
+            towering above my head. Feeding that animal made me hungry. I went
+            to get a
+            <span
+              ><input type="text" placeholder="Adjective" id="adjective-3"
+            /></span>
+            scoop of ice cream. It filled my stomach. Afterwards I had to
+            <span
+              ><input type="text" placeholder="Verb(past)" id="verb-2"
+            /></span>
+            <span
+              ><input type="text" placeholder="Adverb" id="adverb-2"
+            /></span>
+            to catch our bus. When I got home I
+            <span
+              ><input type="text" placeholder="Verb(past)" id="verb-1"
+            /></span>
+            my Mom for a
+            <span
+              ><input type="text" placeholder="Adjective" id="adjective-4"
+            /></span>
+            day at the zoo.
           </p>
         </div>
 

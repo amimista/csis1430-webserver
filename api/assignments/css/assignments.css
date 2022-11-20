@@ -114,6 +114,12 @@
   background-position-y: 55%;
 }
 
+#mad-lib {
+  background-image: var(--background-gradient), url(../img/pages/mad-lib.png);
+  background-size: cover;
+  background-position-y: 55%;
+}
+
 #coming-soon {
   opacity: 0;
 }
