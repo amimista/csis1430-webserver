@@ -4,9 +4,6 @@ let lotteryMax;
 const absoluteMax = 20;
 
 function lottery() {
-  document.getElementById("result").style.opacity = 0;
-  document.getElementById("result").style.transform = "translateY(-30%)";
-
   lotteryLength = parseInt(document.getElementById("inputLength").value);
   if(lotteryLength == null || lotteryLength == NaN) {
     lotteryLength = 6;

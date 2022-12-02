@@ -10,13 +10,15 @@
   </head>
   <body>
     <div class="container">
-      <input type="text" placeholder="Length" id="inputLength" autofocus/>
-      <div class="range-container">
-        <input type="text" placeholder="From" id="inputRange1" autofocus/>
-        <div class="range-dash">-</div>
-        <input type="text" placeholder="To" id="inputRange2" autofocus/>
+      <div id="input-container">
+        <input type="text" placeholder="Length" id="inputLength" autofocus/>
+        <div class="range-container">
+          <input type="text" placeholder="From" id="inputRange1" autofocus/>
+          <div class="range-dash">-</div>
+          <input type="text" placeholder="To" id="inputRange2" autofocus/>
+        </div>
+        <button type="submit" onclick="lottery();">Submit</button>
       </div>
-      <button type="submit" onclick="lottery();">Submit</button>
       <a href="../../">
         <div id="result"></div>
       </a>
